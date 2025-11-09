@@ -1,0 +1,39 @@
+body {
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+}
+
+.header-bg {
+    background-color: #001f40;
+}
+
+.footer-bg {
+    background-color: #001f40;
+    font-size: 0.9rem;
+}
+
+.carousel-box {
+    height: 400px;
+}
+
+#about {
+    background-color: #fff;
+    margin-top: 4rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stats-box {
+    background-color: #f1f5fa;
+    border-left: 4px solid #003366;
+}
+
+@media (max-width: 768px) {
+    .carousel-box {
+        height: 280px;
+    }
+    #about {
+        padding: 2rem 1rem;
+    }
+}
