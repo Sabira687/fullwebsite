@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // Открытие модального окна "Details"
     $('.details-btn').on('click', function () {
         const title = $(this).data('title');
         const desc = $(this).data('desc');
@@ -9,14 +8,12 @@ $(document).ready(function () {
         $('#clubModal').modal('show');
     });
 
-    // Открытие окна записи с задержкой
     $('.join-btn').on('click', function () {
         const club = $(this).data('club');
         $('#joinClubName').text(`You are joining: ${club}`);
         $('#telegram').val('');
         $('#joinMessage').text('');
 
-        // имитация “долгой загрузки”
         const btn = $(this);
         btn.text('Loading...').prop('disabled', true);
 
@@ -26,7 +23,6 @@ $(document).ready(function () {
         }, 1500);
     });
 
-    // Отправка формы "Join"
     $('#submitJoin').on('click', function () {
         const telegram = $('#telegram').val().trim();
         const msg = $('#joinMessage');

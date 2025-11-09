@@ -8,7 +8,6 @@ $(document).ready(function () {
         const message = $('#message').val().trim();
         const formMessage = $('#formMessage');
 
-        // Простая валидация
         if (!name || !email || !type || !message) {
             formMessage.text('Please fill in all fields.').css('color', 'red');
             return;
@@ -21,7 +20,6 @@ $(document).ready(function () {
 
         formMessage.text('Sending...').css('color', '#888');
 
-        // Эмуляция отправки
         setTimeout(() => {
             formMessage.text('Thank you! Your suggestion has been submitted ✅').css('color', 'green');
             $('#suggestionForm')[0].reset();
