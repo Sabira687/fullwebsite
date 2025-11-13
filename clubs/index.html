@@ -53,7 +53,7 @@
                                     data-desc="The AI Club unites students passionate about Artificial Intelligence and Machine Learning. Members develop projects, participate in Kaggle competitions, and host seminars on modern AI trends.">
                                 Details
                             </button>
-                            <button class="btn btn-outline-success join-btn" data-club="AI Club">
+                            <button class="btn btn-outline-success join-btn" data-club="AI Club" data-title="AI Club">
                                 Join
                             </button>
                         </div>
@@ -73,7 +73,7 @@
                                     data-desc="Students learn network defense, cryptography, and participate in Capture The Flag competitions. The club hosts internal workshops and invites professionals from the cybersecurity industry.">
                                 Details
                             </button>
-                            <button class="btn btn-outline-success join-btn" data-club="Cyber Security Club">
+                            <button class="btn btn-outline-success join-btn" data-club="Cyber Security Club" data-title="Cyber Security Club">
                                 Join
                             </button>
                         </div>
@@ -94,7 +94,7 @@
                                     data-desc="Members work with visual storytelling, branding, and video production. The club collaborates with university departments to produce content for events and social media.">
                                 Details
                             </button>
-                            <button class="btn btn-outline-success join-btn" data-club="Media & Design Club">
+                            <button class="btn btn-outline-success join-btn" data-club="Media & Design Club" data-title="Media & Design Club">
                                 Join
                             </button>
                         </div>
@@ -123,22 +123,25 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Join Club</h5>
+                    <h5 class="modal-title" id="joinModalTitle">Join Club</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p id="joinClubName" class="fw-semibold mb-3"></p>
-                    <label for="telegram" class="form-label">Enter your Telegram tag</label>
-                    <input type="text" id="telegram" class="form-control" placeholder="@username" />
-                    <div id="joinMessage" class="mt-3 text-center fw-semibold"></div>
+                    <label for="telegramTag" class="form-label">Enter your Telegram tag:</label>
+                    <input type="text" id="telegramTag" class="form-control" placeholder="@username">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-success" id="submitJoin">Submit</button>
+                    <button type="button" class="btn btn-primary" id="confirmJoin">Confirm</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <section class="container mt-5 mb-5">
+        <h4 class="fw-semibold mb-3">My Joined Clubs</h4>
+        <ul id="joinedClubsList" class="list-group"></ul>
+    </section>
 
     <footer class="footer-bg text-light text-center py-4">
         <div>Contacts: Lorem@gmail.com | Something@gmail.com</div>

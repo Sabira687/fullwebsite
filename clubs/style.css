@@ -60,3 +60,18 @@ footer {
     background-color: #006633;
     color: #fff;
 }
+
+#joinedClubsList {
+    max-width: 600px;
+    margin: auto;
+}
+
+.remove-btn {
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+.remove-btn:hover {
+    background-color: #d9534f;
+    color: #fff;
+}

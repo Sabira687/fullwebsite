@@ -37,3 +37,27 @@ body {
         padding: 2rem 1rem;
     }
 }
+.about-section {
+    background-color: #f4f6f8;
+}
+
+.about-text, .stats-box, .weather-box {
+    height: 100%;
+}
+
+.stats-box, .weather-box {
+    transition: all 0.3s ease;
+}
+
+.stats-box:hover, .weather-box:hover {
+    background-color: #eaf3ff;
+}
+
+@media (max-width: 992px) {
+    .about-section .row {
+        flex-direction: column;
+    }
+    .stats-box, .weather-box, .about-text {
+        height: auto;
+    }
+}
